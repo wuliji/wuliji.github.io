@@ -1,124 +1,285 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
+<meta name="description" content="谈同个人博客，本站会给大家不定时更新关于web前端的一些小技巧。如大家有不懂得问题，也可以与我们联系，我们会尽力帮助您。">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>乌力吉</title>
-
-<link href="css/styles.css" rel="stylesheet">
-
+<link rel="shortcut icon" href="images/logo.png">
+<meta charset="utf-8">
+<meta charset="gb2312">
+<meta name="keywords" content="个人博客" />
+<meta name="keywords" content="博客搭建" />
+<meta name="keywords" content="博客网站" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="baidu-site-verification" content="CtYt4injW1" />
+<meta name="360-site-verification" content="a75dcb147688915b4cc7cfaa71e996a2" />
+<title>谈同个人博客♠★♠一个前端设计的热血青年</title>
+<meta name="keywords" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+<meta name="description" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
-<header>
-
- <nav id="nav">
-   <ul>
-    <li><a href="hello.html">网站首页</a></li>
-    <li><a href="#" target="_blank">我的简历</a></li>
-    <li><a href="#"  target="_blank">技术分享</a></li>
-    <li><a href="#" target="_blank">随写日志</a></li>
-    <li><a href="#" target="_blank">联系我们</a></li>
-   </ul>
-  <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
- </nav>
- </header>
- <div class="mainContent">
-    <aside>
-      <div class="avatar">
-        <a href="#"><span>青轻飞扬</span></a>
+<div class="topnav">
+<a href="http://www.tthcclove.cn" target="_blank">谈同个人博客♠★♠一个前端设计的热血青年</a>――本站文章部分来自网络<a href="http://www.tthcclove.cn" target="_blank">如有涉嫌侵权，请与本站邮箱联系</a>
+</div>
+<div id="wrapper">
+  <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">谈同个人博客♠★♠一个前端设计的热血青年</div>
+      <div class="search f_r">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="搜索" type="submit">
+        </form>
       </div>
-      <section class="topspaceinfo">
-        <h1>执子之手，与子偕老</h1>
-        <p>于千万人之中，我遇见了我所遇见的人....</p>
-      </section>
-      <div class="userinfo"> 
-        <p class="q-fans"> 粉丝：<a href="/" target="_blank">167</a></p> 
-        <p class="btns"><a href="/" target="_blank" >私信</a><a href="/" target="_blank">相册</a><a href="/" target="_blank">存档</a></p>   
-      </div>
-      <section class="newpic">
-         <h2>最新照片</h2>
-         <ul>
-           <li><a href="/"><img src="images/01.jpg"></a></li>
-           <li><a href="/"><img src="images/02.jpg"></a></li>
-           <li><a href="/"><img src="images/03.jpg"></a></li>
-           <li><a href="/"><img src="images/04.jpg"></a></li>
-           <li><a href="/"><img src="images/05.jpg"></a></li>
-           <li><a href="/"><img src="images/06.jpg"></a></li>
-           <li><a href="/"><img src="images/07.jpg"></a></li>
-           <li><a href="/"><img src="images/08.jpg"></a></li>
-         </ul>
-      </section>
-      <section class="taglist">
-         <h2>全部标签</h2>
-         <ul>
-           <li><a href="/">青空</a></li>
-           <li><a href="/">情感聊吧</a></li>
-           <li><a href="/">study</a></li>
-           <li><a href="/">青青唠叨</a></li>
-        </ul>
-      </section>
-    </aside>
-    <div class="blogitem">
-      <article>
-        <h2 class="title"><a href="/">陌上花开，可缓缓归矣</a></h2>
-        <ul class="text">
-          <p>“陌上花开，可缓缓归矣。” 含义：（夫人），田间阡陌上的花开了，你可以一边赏花，一边慢慢地回来。</p>
-          <p>“陌上花开，如果没有悄然伫立阡陌并为陌上风情所陶醉的人，那么花开也寂寞，风情也苍白....”喜欢这句话，是因为看了忍冬的作品《陌上花开缓缓归》</p>
-          <p>阳春三月，风和日暖，信步城外，看阡陌之上的杨柳依依，野花绚烂，身心不由得轻爽而浪漫。“三月风情陌上花”，古远的诗句似乎随风从天边飘来，从历史的深处飘来，拂过阡陌，袭上心头，诗是属于清乾嘉诗人赵翼的，可昂首远望，眼前的陌上风情却是不折不扣的现代，由眼帘入心扉。</p>
-          <p class="textimg"><img src="images/text02.jpg"></p>
-          <p>漫步陌上，心情是诗意的那种，优雅而散淡，不惹匆促，只因陌上花开；花是自然的那种，朴素而恬淡，不落尘俗。“三月风情陌上花”，是花在其中生命得以璀璨，人在其中心情得以畅然的一种意境。三月陌上花，让人爱让人痴，恍惚人的骨子里头都沉淀了花的影子，花的风韵。</p>
-          <p>陌上花开，如果没有了从俗累的生活中走出来，悄然伫立阡陌并为陌上风情所陶醉的人，那么花开也寂寞，风情也苍白。于是，一句“陌上花开，可缓缓归矣”不知被多少人吟诵了多少遍。人归缓缓，那花便有灵性，便开得执著，陌上风情也被撩拨得浓郁而热烈。</p>
-          <p>缓缓归，缓缓归，披一袭“三月风情”，再采一束“陌上花”，缓缓归。</p>
-          <p>缓缓归矣，我心已是陌上花开。</p>
-        </ul>
-        <div class="textfoot">
-          <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="#">关于我</a>
+              <ul>
+                <li><a href="about.html">个人简介</a></li>
+                <li><a href="listpic.html">个人相册</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html">我的日记</a>
+              <ul>
+                <li><a href="newslistpic.html">个人日记</a></li>
+                <li><a href="newslistpic.html">学习笔记</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html">技术文章</a> </li>
+            <li><a href="404.html">给我留言</a> </li>
+          </ul>
         </div>
-      </article> 
-      <article>
-        <h2 class="title"><a href="/">岁月留痕——我的2010</a></h2>
-        <ul class="text">
-          <p>A面——岁月留痕之时光</p>
-          <p>每逢新旧年交替时候，我就被笼罩在一股茫然的思绪里，逃也逃不脱，避也避不开，唯有让心事在静静流逝的时光里苍茫成河。</p>
-          <p>是从什么时候开始的呢，我又变得如此感时伤怀？我很羡慕那些在年终盘点总结的人们，过去的一年于他们来说，是大刀阔斧的一年，是硕果累累的一年。再不济的话，也是豪情万丈的一年。而在我那逝去的时光里，平静如水，不起一丝波澜，一年又一年。我没有盘点，因为我没有波澜壮阔；我不会去总结，因为我的总结从来就没有逼近我的心灵。我知道这于我来说，显得多么无厘头。</p>
-          <p class="textimg"><img src="images/text01.jpg"></p>
-          <p>我喜欢这样安静地坐下来，想一些似有若无的心事。尽量不去想那些飞逝的时光，尽量不去想那些形色匆忙的脚步，似乎是在害怕，在这高速运转的时空里，自己有一天会化作一堆虚无。还记得那一部《岁月神偷》的电影吗？真是要感谢来自香港的导演罗启锐，影片给我们芸芸众生留下太多的唏嘘。在如水一般逝去的时光里，皱纹爬上你的眼角，白发蔓延我的双鬓。岁月才是最好的神偷，偷走了我的青春和你的美好。</p>
-          <p>就任这时光慢慢流淌吧，对于大多数人来说，我们无非就是浩瀚时空的一些微尘。虎年走了又怎样</p>
-        </ul>
-        <div class="textfoot">
-          <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
-        </div>
-      </article>
-      <div class="pages"><span>1</span><a href="/" hidefocus="">2</a><a href="/" hidefocus="">3</a><a href="/" class="next">下一页&gt;&gt;</a></div>
+      </nav>
+  <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT>
     </div>
- </div>
-<footer>
-   <div class="footavatar">
-     <img src="images/photo.jpg" class="footphoto">
-     <ul class="footinfo">
-       <p class="fname"><a href="/dancesmile" >青轻飞扬</a>  </p>
-       <p class="finfo">性别：女 年龄：25岁</p>
-       <p>现居：四川成都</p></ul>
-   </div>
-   <section class="visitor">
-     <h2>最近访客</h2>
+  </header>
+  <div class="jztop"></div>
+  <div class="container">
+    <div class="bloglist f_l">
+
+
+    <!--@@@@第一篇文章开始@@@@-->
+      <h3><a href="w1.html" target="_blank">【从前端菜鸟到大神】一片总结的很好的文章</a></h3>
+      <figure><img src="images/img_1.jpg" alt="【从前端菜鸟到大神】一片总结的很好的文章"></figure>
       <ul>
-        <li><a href="/"><img src="images/s0.jpg"></a></li>
-        <li><a href="/"><img src="images/s1.jpg"></a></li>
-        <li><a href="/"><img src="images/s2.jpg"></a></li>
-        <li><a href="/"><img src="images/s3.jpg"></a></li>
-        <li><a href="/"><img src="images/s5.jpg"></a></li>
-        <li><a href="/"><img src="images/s6.jpg"></a></li>
-        <li><a href="/"><img src="images/s7.jpg"></a></li>
-        <li><a href="/"><img src="images/s8.jpg"></a></li>
+        <p> 结合个人经历总结的前端入门方法，总结从零基础到具备前端基本技能的道路、学习方法、资料。由于能力有限，不能保证面面俱到，只是作为入门参考，面向初学者，让初学者少走弯路。</p>
+        <a title="【从前端菜鸟到大神】一片总结的很好的文章" href="w1.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
       </ul>
-   </section>
-   <div class="Copyright">
-     <ul>
-       <a href="/">帮助中心</a><a href="/">空间客服</a><a href="/">投诉中心</a><a href="http://www.17sucai.com/" target="_blank">网页模板</a><a href="/">空间协议</a>
-     </ul>
-     <p>Design by DanceSmile</p>
-   </div>
- </footer>
- 
+      <p class="dateview"><span>2017-10-13</span><span>作者：谈同</span><span>个人博客：[<a href="/jstt/bj/">前端笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2015-01-09/740.html">
+
+
+
+      <!--@@@@第二篇文章开始@@@@@-->
+
+      【深入理解html5系列-文本标签】…</a></h3>
+      <figure><img src="images/img_2.png" alt="【深入理解html5系列-文本标签】…"></figure>
+      <ul>
+        <p>身为一名IT技术人员磨练自己的技术是必不可少的，关注微信号coder_online，程序员互动联盟，可以与大牛在线随时讨论自己感兴趣的话题，让自己用最少的时间学到最多的东西....</p>
+        <a title="【深入理解html5系列-文本标签】…" href="w2.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2017-10-09</span><span>作者：谈同</span><span>个人博客：[<a href="w2.html">心得笔记</a>]</span></p>
+
+
+<!--@@@@第三篇文章开始@@@@@-->
+
+      <h3><a href="w3.html">
+        你就是你自己，别相信任何人对你的评价</a></h3>
+      <figure><img src="images/img_3.jpg" alt="【你就是你自己，别相信任何人对你的评价】…">
+      </figure>
+      <ul>
+        <p>那一年你4岁，非常喜欢唱歌。你有着动听的嗓音，并且唱歌让你快乐。有一天你妈妈加班到了晚上8点才回家，你不知道她今天跟同事吵了架并且被一位客户投诉，不知道她今天头疼了一整天晚上几乎都没有吃饭....</p>
+        <a title="分" href="w3.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2014-11-06</span><span>作者：谈同</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+
+<!--@@@@第四篇文章开始@@@@@-->
+
+      <h3><a href="w4.html">帝国cms常用标签调用方法总结（不得不收藏哦）</a></h3>
+      <figure><img src="images/img_4.jpg" alt="帝国cms常用标签调用方法总结（不得不收藏哦）" height="100"></figure>
+      <ul>
+        <p>帝国CMS使用技巧之多种终端访问版本制作 帝国cms - 安全、强大、稳定、灵活。随着移动互联网的发展，现在访问互联网的不单是台式/笔记本电脑，还有手机、平板电脑等访问终端。各种终端显示效果均有区别。而帝国CMS内置的“模板组”功能就支持生成不同版本页面和网站，以达到更好的用户体验。下面我们来讲解一下基本思路：</p>
+        <a title="帝国cms常用标签调用方法总结（不得不收藏哦）" href="w4.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2015-01-09</span><span>作者：谈同</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+
+    <!--@@@@第五篇文章开始@@@@@-->
+
+
+      <h3><a href="w5.html">【你不了解】一篇关于设计理念的文章</a></h3>
+      <figure><img src="images/img_5.jpg" alt="【你不了解】一篇关于设计理念的文章"></figure>
+      <ul>
+        <p> 设计是从人类生活的开始而不是工业革命之后才产生的。博物馆中文化性收藏品，其作者当
+            时并未被称为设计师，但他们却是真正的设计者。人类的历史、文化遗产都产生于设计，我们能通过当时的设计看到当时的文化。所以大家的责任重大，设计师是在进行一种文化活动，把设计推向
+        未来，有人认为，设计师改变的只是景观，而我不这样看，我认为设计师是在改变世界，这是两个
+        概念。</p>
+        <a title="【你不了解】一篇关于设计理念的文章" href="w5.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2017-07-13</span><span>作者：谈同</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+
+
+<!--@@@@第六篇文章开始@@@@@-->
+
+
+      <h3><a href="w6.html">【我的经历】…</a></h3>
+      <figure><img src="images/logo.png" alt="【我的经历】…"></figure>
+      <ul>
+        <p>博客从最初的域名购买，到上线已经有半年的时间了，这半年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补....
+            <br><br>
+            <h1><a href="http:www.tthcclove.cn" style="color:#444">谈同个人博客</a>
+            </h1>
+        </p>
+        <a title="【我的经历】…" href="w6.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2017-04-09</span><span>作者：谈同</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+    </div>
+
+    <!--首页主要文章部分结束-->
+
+    <div class="r_box f_r">
+      <div class="tit01">
+        <h3 class="tit">关注我</h3>
+        <div class="gzwm">
+          <ul>
+            <li><a class="email" href="tel:15594992776" target="_blank">我的电话</a></li>
+            <li><a class="qq" href="mailto:157956315@qq.com" target="_blank">我的邮箱</a></li>
+            <li><a class="tel" href="http://wpa.qq.com/msgrd?v=3&uin=157956315&site=qq&menu=yes" target="_blank" title="如果QQ未被唤起请按照提示添加我的QQ">我的QQ</a></li>
+            <li><a class="prize" href="#" title="个人奖项">个人奖项</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--tit01 end-->
+
+      <div class="tuwen">
+        <h3 class="tit">图文推荐</h3>
+        <ul>
+          <li><a href="404.html"><img src="images/02.jpg"><b>H5新属性</b></a>
+            <p><span class="tulanmu"><a href="404.html">PC代码</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/3.jpeg" width="100" width="70" height="57"><b>手机的16个惊人小秘密，据说...</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html"><img src="images/06.jpg"><b>住在手机里的朋友</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html"><img src="images/04.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="404.html" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/3.jpeg" width="70" height="57"><b>手机的16个惊人小秘密，据说...</b></a>
+            <p><span class="tulanmu"><a href="404.html">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="ph">
+        <h3 class="tit">点击排行</h3>
+        <ul class="rank">
+          <li><a href="404.html" title="【心路历程】一篇关于设计理念的文章" target="_blank">【心路历程】一篇关于设计理念的文章</a></li>
+          <li><a href="404.html" title="IP要突破2000+了" target="_blank">IP要突破2000+了</a></li>
+          <li><a href="404.html" title="帝国cms首页、自定义页面如何实现分页" target="_blank">帝国cms首页、自定义页面如何实现分页</a></li>
+          <li><a href="404.html" title="【已评选】给我模板PSD源文件，我给你设计HTML！" target="_blank">【已评选】给我模板PSD源文件，我给你设计HTML！</a></li>
+          <li><a href="404.html" title="【郑重申明】本站只提供静态模板下载！" target="_blank">【郑重申明】本站只提供静态模板下载！</a></li>
+          <li><a href="404.html" title="【孕期日记】生活本该如此" target="_blank">【孕期日记】生活本该如此</a></li>
+          <li><a href="404.html" title="【【深入理解html5系列-文本标签】…" target="_blank">【【深入理解html5系列-文本标签】…</a></li>
+          <li><a href="404.html" title=" 2014年度优秀个人博客排名公布" target="_blank"> 2014年度优秀个人博客排名公布</a></li>
+          <li><a href="404.html" title="2014年度优秀个人博客评选活动" target="_blank">2014年度优秀个人博客评选活动</a></li>
+          <li><a href="/404.html" title="使用CSS3制作文字、图片倒影" target="_blank">使用CSS3制作文字、图片倒影</a></li>
+          <li><a href="404.html" title="【分享】css3侧边栏导航不同方向划出效果" target="_blank">【分享】css3侧边栏导航不同方向划出效果</a></li>
+          <li><a href="404.html" title="分" target="_blank">分</a></li>
+        </ul>
+      </div>
+      <div class="ad"> <img src="images/xifu.jpeg" height="300" width="110"> </div>
+    </div>
+  </div>
+
+  <!-- container代码 结束 -->
+  <div class="jzend"></div>
+
+<div class="comment">
+    <div id="SOHUCS"></div>
+<script type="text/javascript">
+(function(){
+var appid = 'cytk2a7nr';
+var conf = '3437d86f4a4e9bf3aad1ef65fc2740b5';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+<!--PC版-->
+<div id="SOHUCS" sid="" ></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cytk2a7nr',
+conf: '3437d86f4a4e9bf3aad1ef65fc2740b5'
+});
+</script>
+
+<!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div>
+<script type="text/javascript">
+(function(){
+var appid = 'cytk2a7nr';
+var conf = 'prod_53c868f5f3ac56a10e72d038ac860764';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+</div>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：<a href="http://www.tthcclove.cn">谈同个人博客</a> 备案号：陕ICP备17018883号</p>
+      </div>
+      <div class="f_r textr">
+        <p>157956315</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!--百度推送代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 </body>
 </html>
