@@ -1,4 +1,4 @@
-@charset "gb2312";
+﻿@charset "gb2312";
 .container {
 	background: #e5e5e5;
 	overflow: hidden;
@@ -123,13 +123,13 @@ a.readmore {
 	float: left;
 }
 .gzwm .email {
-	background: url(../images/gz01.png) no-repeat;
+	background: url(../images/gz03.jpg) no-repeat;
 }
 .gzwm .qq {
-	background: url(../images/gz02.png) no-repeat;
+	background: url(../images/gz03.png) no-repeat;
 }
 .gzwm .tel {
-	background: url(../images/gz03.png) no-repeat;
+	background: url(../images/gz01.png) no-repeat;
 }
 .gzwm .prize {
 	background: url(../images/gz04.png) no-repeat;

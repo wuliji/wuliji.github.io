@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="baidu-site-verification" content="CtYt4injW1" />
+<meta name="360-site-verification" content="a75dcb147688915b4cc7cfaa71e996a2" />
+<link rel="shortcut icon" href="images/logo.png">
+<meta charset="utf-8">
+<meta charset="gb2312">
+<title>初步认识分布式</title>
+<meta name="keywords" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+<meta name="description" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/main.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script src="../../js/shang.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">乌力吉：技术从点滴开始</div>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">JAVA基础相关</a>
+				<ul>
+					<li><a href="about.html">集合</a></li>
+					<li><a href="listpic.html">线程</a></li>
+				</ul>
+			</li>
+            <li><a href="404.html">分布式相关</a></li>
+            <li><a href="404.html">数据库相关</a>
+				<ul>
+					<li><a href="about.html">MySQL</a></li>
+					<li><a href="about.html">NoSQL</a></li>
+					<li><a href="listpic.html">Oracle</a></li>
+				</ul>
+			</li>
+            <li><a href="404.html">框架相关</a>
+				<ul>
+					<li><a href="about.html">Hibernate</a></li>
+					<li><a href="about.html">Struts2</a></li>
+					<li><a href="about.html">Mybatis</a></li>
+					<li><a href="listpic.html">Spring相关</a></li>
+				</ul>
+			</li>
+			<li><a href="404.html">高并发相关</a></li>
+          </ul>
+        </div>
+      </nav>
+<SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT>
+    </div>
+  </header>
+  <div class="container">
+    <div class="con_content">
+      <div class="about_box">
+        <h2 class="nh1"><span>您现在的位置是：<a href="../../index.html" target="_blank">分布式相关</a>>>初步认识分布式</span><b>【分布式基础】</b></h2>
+        <div class="f_box">
+          <p class="a_title">初步认识分布式</p>
+          <p class="p_title"></p>
+            <p class="box_p"><span>发布时间：2018-3-18</span><span>乌力吉</span></p>
+          <!-- 可用于内容模板 -->
+        </div>
+        <ul class="about_content">
+      <h1>分布式概念<h1>
+		要理解分布式系统，主要需要明白一下2个方面：<br/>
+
+		1.分布式系统一定是由多个节点组成的系统。
+		其中，节点指的是计算机服务器，而且这些节点一般不是孤立的，而是互通的。<br/>
+
+		2.这些连通的节点上部署了我们的节点，并且相互的操作会有协同。<br/>
+		<p>分布式系统对于用户而言，他们面对的就是一个服务器，提供用户需要的服务而已，而实际上这些服务是通过背后的众多服务器组成的一个分布式系统，因此分布式系统看起来像是一个超级计算机一样。
+		例如淘宝，平时大家都会使用，它本身就是一个分布式系统，我们通过浏览器访问淘宝网站时，这个请求的背后就是一个庞大的分布式系统在为我们提供服务，整个系统中有的负责请求处理，有的负责存储，有的负责计算，最终他们相互协调把最后的结果返回并呈现给用户。<p>
+		分布式主要分下面三个概念
+		<p>一.异常</p>
+		1.服务器宕机内存错误、服务器停电等都会导致服务器宕机，此时节点无法正常工作，称为不可用。服务器宕机会导致节点失去所有内存信息，因此需要将内存信息保存到持久化介质上。<br/><br/>
+		
+		2. 网络异常
+		有一种特殊的网络异常称为 网络分区 ，即集群的所有节点被划分为多个区域，每个区域内部可以通信，但是区域之间无法通信。<br/><br/>
+		3. 磁盘故障
+		磁盘故障是一种发生概率很高的异常。
+		使用冗余机制，将数据存储到多台服务器。<br/><br/>
+		<p>二.超时</p>
+		在分布式系统中，一个请求除了成功和失败两种状态，还存在着超时状态。
+		<h1>
+		  <img src="../../images/p1.jpg">
+		  可以将服务器的操作设计为具有 幂等性 ，即执行多次的结果与执行一次的结果相同。如果使用这种方式，当出现超时的时候，可以不断地重新请求直到成功。
+        </ul>
+
+        <!-- container代码 结束 -->
+      </div>
+    </div>
+    <div class="blank"></div>
+  </div>
+  <!-- container代码 结束 -->
+
+ <footer>
+    <div class="footer">
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：乌力吉博客</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
